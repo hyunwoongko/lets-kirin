@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC618</color>
+    <color name="colorPrimaryDark">#FFC618</color>
+    <color name="colorAccent">#FFC618</color>
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+</resources>

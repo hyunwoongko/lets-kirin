@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+    <option name="sourceMapPrefix" />
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_connection.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_device_list.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_disconnection.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_terminal.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "496004970208",
+    "firebase_url": "https://eletricalimi.firebaseio.com",
+    "project_id": "eletricalimi",
+    "storage_bucket": "eletricalimi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496004970208:android:69c16e6eaea21d00",
+        "android_client_info": {
+          "package_name": "com.nineteenwang.electricalimi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496004970208-7od02i3367gatc8a0u5p21cpi00r2cvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nineteenwang.electricalimi",
+            "certificate_hash": "c55db684c517c032174e19598cd12338173629d0"
+          }
+        },
+        {
+          "client_id": "496004970208-t7dcg1hdibj5vgqc3mko9svjbvjesmba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAStbqS0E3-HPxuMmZn4Y61-FE73RYkrCU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496004970208-t7dcg1hdibj5vgqc3mko9svjbvjesmba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
