@@ -6,12 +6,19 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.bumptech.glide.Glide;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nineteenwang.electricalimi.R;
-import com.nineteenwang.electricalimi.databinding.MainView;
+import com.nineteenwang.electricalimi.base.BackPressActivity;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -21,7 +28,9 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 /**
  * @Author : Hyunwoong
@@ -29,18 +38,33 @@ import java.util.Locale;
  * @Homepage : https://github.com/gusdnd852
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BackPressActivity {
     private final int REQ_CODE_SPEECH_INPUT = 100;
     ImageButton btnSpeak;
     TextView txtSpeechInput, outputText;
     TextToSpeech tts;
 
 
+    @Override protected void constructView() {
+
+    }
+
+    @Override protected void addObserver() {
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_view);
+
         btnSpeak = findViewById(R.id.btnSpeak);
+
+        Glide.with(this)
+                .asGif()
+                .load(R.raw.kirin)
+                .into(btnSpeak);
+
         txtSpeechInput = findViewById(R.id.txtSpeechInput);
         outputText = findViewById(R.id.outputTex);
         btnSpeak.setOnClickListener(view -> promptSpeechInput());
@@ -50,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 tts.setLanguage(Locale.KOREAN);
             }
         });
+
+        findViewById(R.id.home_button).setOnClickListener(v -> startActivity(new Intent(this, HomeActivity.class)));
     }
 
     private void promptSpeechInput() {
@@ -158,6 +184,55 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(s);
             outputText.setText(s);
             tts.speak(s, TextToSpeech.QUEUE_FLUSH, null);
+            FirebaseDatabase.getInstance()
+                    .getReference().addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override public void onDataChange(DataSnapshot dataSnapshot) {
+                    Map<String, Long> map = new HashMap<>();
+
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        map.put(snapshot.getKey(), (Long) snapshot.getValue());
+                    }
+
+                    if (s.contains("모두")) {
+                        if (s.contains("종료")) {
+                            map.put("AIR_STATUS", (long) 0);
+                            map.put("LED_STATUS", (long) 0);
+                            FirebaseDatabase.getInstance()
+                                    .getReference().setValue(map);
+                        } else if (s.contains("켭니다")) {
+                            map.put("AIR_STATUS", (long) 1);
+                            map.put("LED_STATUS", (long) 1);
+                            FirebaseDatabase.getInstance()
+                                    .getReference().setValue(map);
+                        }
+                    } else if (s.contains("에어컨")) {
+                        if (s.contains("종료")) {
+                            map.put("AIR_STATUS", (long) 0);
+                            FirebaseDatabase.getInstance()
+                                    .getReference().setValue(map);
+                        } else if (s.contains("켭니다")) {
+                            map.put("AIR_STATUS", (long) 1);
+                            FirebaseDatabase.getInstance()
+                                    .getReference().setValue(map);
+                        }
+                    } else if (s.contains("전등") || s.contains("불")) {
+                        if (s.contains("종료")) {
+                            map.put("LED_STATUS", (long) 0);
+                            FirebaseDatabase.getInstance()
+                                    .getReference().setValue(map);
+                        } else if (s.contains("켭니다")) {
+                            map.put("LED_STATUS", (long) 1);
+                            FirebaseDatabase.getInstance()
+                                    .getReference().setValue(map);
+                        }
+                    }
+                }
+
+                @Override public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
         }
     }
 }

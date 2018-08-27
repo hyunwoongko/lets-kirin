@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/kkkkk"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/home_back">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/light"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/light" />
+
+
+            <ImageButton
+                android:id="@+id/ref"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/refre" />
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/airc"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="65dp"
+            android:background="@drawable/airc" />
+
+    </LinearLayout>
 </LinearLayout>

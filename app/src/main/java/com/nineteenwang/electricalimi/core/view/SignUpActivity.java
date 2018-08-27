@@ -52,9 +52,10 @@ public class SignUpActivity extends BaseActivity implements LifecycleOwner {
                             if (viewModel.password.getValue().trim().length() < 6) {
                                 Toasty.error(this, "비밀번호는 6자 이상 입력해주세요.", Toast.LENGTH_SHORT).show();
                                 view.progress.setVisibility(View.GONE);
+                            }else {
+                                Toasty.error(this, "네트워크 불량 혹은 중복된 이메일입니다.", Toast.LENGTH_SHORT).show();
+                                view.progress.setVisibility(View.GONE);
                             }
-                            Toasty.error(this, "네트워크 불량 혹은 중복된 이메일입니다.", Toast.LENGTH_SHORT).show();
-                            view.progress.setVisibility(View.GONE);
                         }
                     });
         };

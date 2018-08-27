@@ -17,7 +17,6 @@ import com.nineteenwang.electricalimi.utill.PreferenceHelper;
  */
 public class WangApp extends Application {
 
-
     @Override public void onCreate() {
         if (PreferenceHelper.getInstance(this).getBoolean("firstUser", true)) {
             startService(new Intent(this, InfiniteService.class));

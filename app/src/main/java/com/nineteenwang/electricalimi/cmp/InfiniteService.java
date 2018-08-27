@@ -55,12 +55,19 @@ public class InfiniteService extends Service {
                     map.put(snapshot.getKey(), (Long) snapshot.getValue());
                 }
 
-                Long coffee = map.get("COFFEE_STATUS");
-                Long distance = map.get("DISTANCE_STATUS");
+                Long air = map.get("AIR_STATUS");
+                Long btn = map.get("BTN");
                 Long led = map.get("LED_STATUS");
 
-                if (led == 1 && coffee == 1 && distance == 1) {
-                    tts.speak("테스트 1 2 3", TextToSpeech.QUEUE_FLUSH, null);
+                if (led == 1 && air == 0) {
+                    tts.speak("식사는 하셨나요?", TextToSpeech.QUEUE_FLUSH, null);
+                    Observable.just(0)
+                            .delay(3, TimeUnit.SECONDS)
+                            .subscribe(n -> startService(new Intent(InfiniteService.this, OpenMicService.class)));
+                }
+
+                if (led == 0 && air == 1) {
+                    tts.speak("주무시기 전에 씻고 주무셔야죠 ~", TextToSpeech.QUEUE_FLUSH, null);
                     Observable.just(0)
                             .delay(3, TimeUnit.SECONDS)
                             .subscribe(n -> startService(new Intent(InfiniteService.this, OpenMicService.class)));

@@ -6,7 +6,6 @@ import com.nineteenwang.electricalimi.R;
 import com.nineteenwang.electricalimi.base.BaseActivity;
 import com.nineteenwang.electricalimi.utill.PreferenceHelper;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,11 +20,24 @@ public class TutorialActivity extends BaseActivity {
     private int count = 0;
 
     @Override protected void constructView() {
-        imgList = Arrays.asList();
-
+        imgList = Arrays.asList(
+                getResources().getDrawable(R.drawable.t00),
+                getResources().getDrawable(R.drawable.t01),
+                getResources().getDrawable(R.drawable.t02),
+                getResources().getDrawable(R.drawable.t03),
+                getResources().getDrawable(R.drawable.t04),
+                getResources().getDrawable(R.drawable.t05),
+                getResources().getDrawable(R.drawable.t06),
+                getResources().getDrawable(R.drawable.t07),
+                getResources().getDrawable(R.drawable.t08),
+                getResources().getDrawable(R.drawable.t09),
+                getResources().getDrawable(R.drawable.t10),
+                getResources().getDrawable(R.drawable.t11));
         setContentView(R.layout.tutorial_view);
+        findViewById(R.id.tutorial).setBackground(imgList.get(count));
+        count++;
         findViewById(R.id.tutorial).setOnClickListener(v -> {
-            if (count < 10) {
+            if (count < 12) {
                 findViewById(R.id.tutorial).setBackground(imgList.get(count));
                 count++;
             } else {
