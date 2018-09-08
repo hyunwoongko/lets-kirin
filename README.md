@@ -11,7 +11,10 @@
 
 
 ### Description : AI Chatbot that Manage Electric Home Devices ⚡️
-#### 가정용 기기를 관리하는 AI Chatbot "레쓰기린" 입니다.
+
+사용자의 전력사용상태 / 사용패턴 / 출입내역을 활용하여<br>
+사용자에게 매일매일 습관을 향상 시켜주고 모멘텀을 가져다주는<br>
+전력상태 기반 AI 헬스케어 IoT 서비스 '레쓰기린' 입니다.
 
 
 [![Watch the video](https://user-images.githubusercontent.com/38183241/45254924-78b23000-b3bb-11e8-9ff5-28f3e143cf42.png)](https://www.youtube.com/watch?v=bSqrA-iVOM4)
