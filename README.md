@@ -24,7 +24,7 @@
 * Version: 0.1.0
 * Team: Awakers
 * Developer: [DaeSung Wang](https://github.com/Mamosoo), [HyunWoong Go](https://github.com/gusdnd852)
-* Designer : [HyunWoo Ju](#)
+* Designer : [HyunWoo Ju](https://www.instagram.com/henu21/)
 * Development environment specifics:
 	- IntelliJ 2018.1.6 (Java1.8)
 	- Target SDK Version: 27(Android Oreo)
