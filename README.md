@@ -19,7 +19,7 @@
 
 [![Watch the video](https://user-images.githubusercontent.com/38183241/45254924-78b23000-b3bb-11e8-9ff5-28f3e143cf42.png)](https://www.youtube.com/watch?v=bSqrA-iVOM4)
 
-### 클릭하시면 동영상이 출력됩니다.
+### 이미지를 클릭하면 동영상이 출력됩니다.
 ### [Google PlayStore 에서 다운로드](https://play.google.com/store/apps/details?id=com.nineteenwang.electricalimi)
 
 
