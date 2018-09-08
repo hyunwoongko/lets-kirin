@@ -22,7 +22,7 @@
 
 ## Notice
 * Version: 0.1.0
-* Team: Awakers
+* Team: 19시즌 
 * Developer: [DaeSung Wang](https://github.com/Mamosoo), [HyunWoong Go](https://github.com/gusdnd852)
 * Designer : [HyunWoo Ju](https://www.instagram.com/henu21/)
 * Development environment specifics:
