@@ -1,6 +1,9 @@
 
 ![image](https://user-images.githubusercontent.com/38183241/45254827-a8f8cf00-b3b9-11e8-8166-c5f431c13b74.png)
 ### 2018 한국전력 일렉스톤 장려상 수상작입니다.
+
+[관련 기사 참조](http://blog.kepco.co.kr/1310)
+
 <br>
 <br>
 <br>
