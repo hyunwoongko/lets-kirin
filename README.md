@@ -46,7 +46,10 @@
 <br>
 
 ## H/W Detail
-The Android base is a firebase and we used the NodeMCU for smooth collaboration with that part, using ESP8266wifi.h and FirebaseArduino.h to assume a state to check the power state We used the fan and Neopixel to perform prototyping.
+The Android base is a firebase and we used the NodeMCU for smooth collaboration with that part,
+using ESP8266wifi.h and FirebaseArduino.h to assume a state to check the power state We used the fan and 
+Neopixel to perform prototyping.
+
 
 <br>
 
