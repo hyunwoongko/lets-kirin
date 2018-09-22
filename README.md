@@ -1,6 +1,6 @@
 
 ![image](https://user-images.githubusercontent.com/38183241/45254827-a8f8cf00-b3b9-11e8-8166-c5f431c13b74.png)
-### winner of the 2018 KEPCO Elecsthon Encouragement Award.
+### Winner of the 2018 KEPCO Elecsthon Encouragement Award.
 
 [See related articles](http://blog.kepco.co.kr/1310)
 
@@ -14,7 +14,7 @@
 
 ### Description : AI Chatbot that Manage Electric Home Devices ⚡️
 
-It is a power state based AI Healthcare IoT service that <br>
+It is a service based AI Healthcare IoT that <br>
 utilizes user's power use status / usage pattern / access history <br>
 to improve daily habits and bring momentum to users.
 
