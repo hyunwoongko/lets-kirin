@@ -1,6 +1,6 @@
 
 ![image](https://user-images.githubusercontent.com/38183241/45254827-a8f8cf00-b3b9-11e8-8166-c5f431c13b74.png)
-### winner of the 2018 KEPCO Electric Stone Encouragement Award.
+### winner of the 2018 KEPCO Elecsthon Encouragement Award.
 
 [See related articles](http://blog.kepco.co.kr/1310)
 
