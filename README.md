@@ -65,6 +65,5 @@ Neopixel to perform prototyping.
 <br>
 ## Download
 
-[![image](https://user-images.githubusercontent.com/38183241/45920759-278a5c00-bee4-11e8-964f-5d51ba75faad.png)](https://play.google.com/store/apps/details?id=com.nineteenwang.electricalimi)
 
-
+[![image](https://user-images.githubusercontent.com/38183241/45920826-0d04b280-bee5-11e8-89d7-9d69417b3a9f.png)](https://play.google.com/store/apps/details?id=com.nineteenwang.electricalimi)
