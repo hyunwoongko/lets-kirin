@@ -21,7 +21,7 @@ to improve daily habits and bring momentum to users.
 
 [![Watch the video](https://user-images.githubusercontent.com/38183241/45254924-78b23000-b3bb-11e8-9ff5-28f3e143cf42.png)](https://www.youtube.com/watch?v=bSqrA-iVOM4)
 
-### Click on the image to output the movie.
+### Click on the image to watch the movie.
 <br>
 <br>
 
