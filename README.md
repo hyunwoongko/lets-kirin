@@ -14,8 +14,8 @@
 
 ### Description : AI Chatbot that Manage Electric Home Devices ⚡️
 
-Service based AI Healthcare IoT that <br>
-utilizes user's power use status / usage pattern / access history <br>
+Service based AI Healthcare IoT that utilizes <br>
+user's power use status / usage pattern / access history <br>
 to improve daily habits and bring momentum to users.
 
 
