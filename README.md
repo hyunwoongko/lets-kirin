@@ -25,11 +25,13 @@ to improve daily habits and bring momentum to users.
 <br>
 <br>
 
-## Notice
-* Version: 0.1.0
-* Team: 19시즌 왕대성
+## Team '19th Wang'
+
+![image](https://user-images.githubusercontent.com/38183241/46395849-a5dacf80-c728-11e8-9635-c13c285cd6fc.png)
+
 * Developer: [DaeSung Wang](https://github.com/Mamosoo), [HyunWoong Go](https://github.com/gusdnd852)
 * Designer : [HyunWoo Ju](https://www.instagram.com/henu21/)
+
 
 <br>
 
