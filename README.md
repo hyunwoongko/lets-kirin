@@ -43,14 +43,9 @@ to improve daily habits and bring momentum to users.
  * Fan - 5V
  * Neopixel - Adafruit
  
-
-<br>
-
-## H/W Detail
 The Android base is a firebase and we used the NodeMCU for smooth collaboration with that part,
 using ESP8266wifi.h and FirebaseArduino.h to assume a state to check the power state We used the fan and 
 Neopixel to perform prototyping.
-
 
 <br>
 
